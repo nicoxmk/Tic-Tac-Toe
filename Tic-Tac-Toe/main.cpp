@@ -1,6 +1,6 @@
-//Nico Xia 260770119
+//Nico Mingkun Xia 
 #include <iostream>
-#include "functions.cpp"
+#include "functions.h"
 using namespace std;
 
 int main(){
