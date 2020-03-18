@@ -1,4 +1,4 @@
-//Nico Xia 260770119
+//Nico Mingkun Xia 
 #include <iostream>
 using namespace std;
 const char x = 'x';
@@ -119,7 +119,7 @@ void computerMove(char board[]){
             else {
                 //if no such situation, reset this cell
                 board[cellNbre-1] = EMPTY;
-                 //cout<<"heree\n";
+               
             }
         }
     }
@@ -139,22 +139,12 @@ void computerMove(char board[]){
             else {
                 //if no such situation, reset this cell
                 board[cellNbre-1] = EMPTY;
-                 //cout<<"here\n";
+                 
             }
     }
 }
-    // //case#3: put mark on center in priority of random pick
-    // //This case aims to increase (a bit) of intelligence of computer
-    // //since marking on center gives user less ideal cell to choose
-    // for(int cellNbre=5; cellNbre<=14;cellNbre+9){
-    //     if(board[cellNbre]==EMPTY && checkIfLegal(cellNbre,board)){
-    //         //cout<<"Computer put at center: "<<cellNbre<<endl;
-    //         board[cellNbre] = o;
-    //         cout<<"hereee\n";
-    //         return;
-    //     }
-    // }
-    //case#4: if none of them above, random choose a cell
+   
+    //case#3: if none of them above, random choose a cell
     srand(time(0));
     int r = rand()%27+1; 
     while(!checkIfLegal(r,board)){
@@ -164,8 +154,6 @@ void computerMove(char board[]){
         cout<<"COMPUTER: Let me randomly choose here: "<<r<<endl;
         return;
 
-       
-    
 }
 
 
